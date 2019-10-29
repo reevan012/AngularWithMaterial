@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<script src = "js/angular.js"></script>
+		<script src = "js/app.js"></script>
+		<meta charset = "UTF-8" name = "viewport" content = "width=device-width, initial-scale=1" />
+		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style type="text/css">
+<!--
+.style2 {font-size: 16px}
+.style3 {color: #00FF00}
+-->
+        </style>
+	</head>
+<body ng-app = "myModule" ng-controller = "myController">
+	<div class="container">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <center>
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	 <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  </center>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/pic6.png" alt="Juwelary" width="800" height="200">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pic5.png" width="800" height="200">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pic9.png" width="800" height="200">
+    </div>
+	<div class="carousel-item">
+      <img src="images/pic11.png"  width="800" height="200">
+    </div>
+	
+  </div>
+  </div>
+  
+</div>
+	 <div class="row display-table-row">
+                <div class="col-md-1 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                    <div class="logo">
+                        <a hef="home.html"><img src="images/b.png" height="60" width="60"  alt="merkery_logo" class="hidden-xs hidden-sm">
+                            
+                        </a>
+                    </div>
+                    <div class="navi">
+                        <ul>
+                            <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                            <li><a href="#!addProduct"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Add Product</span></a></li>
+                            <li><a href="file:///C:/Users/PC/Desktop/AngEvedenc/Evidence_id/login.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">UserLogin</span></a></li>
+                            <li><a href="file:///C:/Users/PC/Desktop/AngEvedenc/Evidence_id/indexa.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Calculate</span></a></li>
+                            <li><a href="F:/AngularProject/dashboard.html"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Slide show</span></a></li>
+                            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                    <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                    <div class="row">
+                        <header>
+                            <div class="col-md-7">
+                                <nav class="navbar-default pull-left">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                            <span class="sr-only">Toggl</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                </nav>
+	       <div class="search hidden-xs hidden-sm">
+                                    <input type="text" placeholder="Search" id="search">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="header-rightside">
+                                    <ul class="list-inline header-top pull-right">
+                                        <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Add Item</a></li>
+                                        <span class="style2"></span>
+                                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                        <li>
+                     <span class="style2"></span>                       <a href="#">
+                         <i class="fa fa-bell" aria-hidden="true"></i>
+                         <span class="label label-primary">3</span> </a> </li>
+                                        <span class="style3"></span>
+                                        <li class="mail">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/jpic7.png" alt="user"> </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <div class="navbar-content">
+                                                        <span>JS Krishna</span>
+                                                        <p class="text-muted small">
+                                                            me@jskrishna.com  </p>
+                                                        <div class="divider"> </div>
+                                                        <a href="#" class="view btn-sm active">View Profile</a>  </div>
+                                                </li>
+                                            </ul>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+	
+		
+	<div class = "col-md-9 well">
+		<h3 class = "text-primary"><center>Welcome to online shopping site</center></h3>
+		<hr style = "border-top:1px dotted #ccc;"/>
+		<div id = "bg-background" class = "col-md-12">
+		
+			<h4> Please choose PRODUCTS<h4>
+			<hr style = "border-top:1px groovy #ccc;"/>
+			
+		
+			<div id = "product">
+				<div id = "p_list" ng-repeat = "product in products ">
+					<h5>{{product.p_name}}</h5>
+					<center><img ng-src = "{{product.p_image}}"/></center>
+					<div><label>Price: TK-{{product.p_price}}</label></div>
+					<center><button type = "button" ng-click = "add_cart(product)"><span class = "glyphicon glyphicon-shopping-cart"></span> Add to cart</button></center>
+				</div>
+			</div>
+		
+	</div>
+	</div>
+	<div class = "pull-right col-md-3">
+			<div class = "panel panel-primary">
+				<div class = "panel-heading">
+					<h5>MY CART</h5>
+				</div>
+				<div class = "panel-body table-responsive">
+					<table class = "table">
+						<thead>
+							<tr>
+								<th>Product</th>
+								<th>Price</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat = "cart in carts" ng-init = "setTotals(cart)">
+								<td>{{cart.p_name}}</td>
+								<td>TK-{{cart.p_price}}</td>
+								<td><button type = "button" ng-click = "remove_cart(cart)" class = "btn btn-danger"><span class = "glyphicon glyphicon-remove"></span></button></td>
+							</tr>
+							<tr>
+								<td align = "right">Total</td>
+								<td>TK-{{total}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+</body>	
+</html>
